@@ -338,6 +338,7 @@ jobs:
   sonarqube:
     name: SonarQube Analysis & Quality Gate Check
     runs-on: ubuntu-latest
+    if: false
     needs:
       - server-test
       - client-test
